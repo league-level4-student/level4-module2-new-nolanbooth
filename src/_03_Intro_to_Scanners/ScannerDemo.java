@@ -24,9 +24,9 @@ public class ScannerDemo {
          * Eclipse's console. This may change depending on the environment where
          * are running your program or the input/output stream you are using.
          */
-
-        
-        
+    	Scanner scanner = new Scanner(System.in);
+        System.out.println("what is your name");
+        String name = scanner.nextLine();
         /*
          * 2. Use a syso to ask the user for their name and then use the Scanner
          * created in step 1 to take in the user's name as a String.
@@ -42,6 +42,10 @@ public class ScannerDemo {
          * String variable.
          */
 
+        
+        System.out.println("How old are you");
+       int age = scanner.nextInt();
+       
         
         
         /*
@@ -61,9 +65,10 @@ public class ScannerDemo {
          * Note: There are many methods similar to the one you used for int that
          * are capable of taking in primitive data types.
          */
-
+       System.out.println("enter a random decimal");
+       float floaty = scanner.nextFloat();
         // 5.) Print the user's data to the console nicely formatted.
-
+       System.out.println("Name: " + name + " \n Age: " + age + " \n Random Decimal: " + floaty);
         
         
         /*
@@ -72,7 +77,7 @@ public class ScannerDemo {
          * Note: When using a Scanner with the System.in input stream in larger
          * programs only close the scanner when your program is completely done.
          */
-
+       scanner.close();
     }
 
 }

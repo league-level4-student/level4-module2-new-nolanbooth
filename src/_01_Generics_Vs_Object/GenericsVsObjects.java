@@ -10,11 +10,12 @@ public class GenericsVsObjects {
         /*
          * Notice we have a compilation error. Why is this? Comment out that
          * line of code once you understand the error
+         * beacause of the type of the array list -> cannot add a number to an arraylist of strings
          */
         GenericsList<String> generics = new GenericsList<String>();
         generics.add("Bob");
         generics.add("Anne");
-        generics.add(5);
+       // generics.add(5);
         generics.add("Tom");
 
         /*
