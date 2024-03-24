@@ -55,7 +55,7 @@ public class TernaryOperatorDemo {
          * statements please use switch statements or normal if/else statements
          * for the sake of all who must read your code.
          */
-
+// case where you can do int x = s.equals("ja") ? value : value ;
     }
 
 }
